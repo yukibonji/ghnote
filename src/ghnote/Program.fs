@@ -2,7 +2,8 @@
 open FSharp.Data
 
 //HERE BE THE MAGIC!
-//Type provider infering Issue type from this https://github.com/bentayloruk/ghnote/blob/master/src/ghnote/SampleIssues.json
+//Type provider infering Issue type from some sample JSON in file:
+//https://github.com/bentayloruk/ghnote/blob/master/src/ghnote/SampleIssues.json
 type Issue = JsonProvider<"SampleIssues.json">
 
 [<EntryPoint>]
