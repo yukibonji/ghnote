@@ -1,6 +1,8 @@
 ﻿open FSharp.Net
 open FSharp.Data
 
+//HERE BE THE MAGIC!
+//Type provider infering Issue type from this https://github.com/bentayloruk/ghnote/blob/master/src/ghnote/SampleIssues.json
 type Issue = JsonProvider<"SampleIssues.json">
 
 [<EntryPoint>]
